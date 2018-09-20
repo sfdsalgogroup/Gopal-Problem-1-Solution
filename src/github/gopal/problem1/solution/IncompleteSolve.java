@@ -4,15 +4,14 @@
 package github.gopal.problem1.solution;
 
 import github.gopal.problem1.structures.ModifiedLLNode;
-import github.gopal.problem1.util.ListPrinter;
 
 /**
  * @author Gopal
  *
  */
-public class Solve {
+public class IncompleteSolve {
 
-	private Solve() {
+	private IncompleteSolve() {
 		// NOOP
 	}
 
@@ -42,13 +41,6 @@ public class Solve {
 
 		ModifiedLLNode clonedHeadNode = originalHeadNode.getNext();
 		ModifiedLLNode tempClonedNode = clonedHeadNode;
-		
-		
-		System.out.println("#############################################");
-		ListPrinter.printList(clonedHeadNode);
-		System.out.println("#############################################");
-		
-		
 		
 		while (tempClonedNode != null) {
 			ModifiedLLNode tempClonedNextNode = tempClonedNode.getNext();
